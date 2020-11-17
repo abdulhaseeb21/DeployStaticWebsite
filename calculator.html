@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="calculator.css" type="text/css" rel="stylesheet"/>
+    <title>Caalculator</title>
+</head>
+  <body>
+   <div id="main">
+     <form name="myForm">
+        <input id="mainField" type="text" name="View" value="0" class="textView"/>
+     </form>
+     <table>
+       <tr>
+   
+        <td><input type="button" class="button symbols" value=
+        "C" onclick="clearThis()"></td>
+        <td><input type="button" class="button symbols" value=
+        "." onclick="writeThis(this.value)"/></td>
+        <td><input type="button" class="button symbols" value=
+        "/" onclick="writeThis(this.value)"/></td>
+        <td><input type="button" class="button symbols" value=
+        "⌫" onclick="cutLast()"/></td>
+       </tr>
+       <tr>
+        <td><input type="button" class="button numbers" value=
+        "7" onclick="writeThis(this.value)"/></td>
+        <td><input type="button" class="button numbers" value=
+        "8" onclick="writeThis(this.value)"/></td>
+        <td><input type="button" class="button numbers" value=
+        "9" onclick="writeThis(this.value)"/></td>
+        <td><input type="button" class="button symbols" value=
+        "+" onclick="writeThis(this.value)"/></td>
+      </tr>
+      <tr>
+        <td><input type="button" class="button numbers" value=
+        "4" onclick="writeThis(this.value)"/></td>
+        <td><input type="button" class="button numbers" value=
+        "5" onclick="writeThis(this.value)"/></td>
+        <td><input type="button" class="button numbers" value=
+        "6" onclick="writeThis(this.value)"/></td>
+        <td><input type="button" class="button symbols" value=
+        "-" onclick="writeThis(this.value)"/></td>
+      </tr>
+      <tr>
+        <td><input type="button" class="button numbers" value=
+        "1" onclick="writeThis(this.value)"/></td>
+        <td><input type="button" class="button numbers" value=
+        "2" onclick="writeThis(this.value)"/></td>
+        <td><input type="button" class="button numbers" value=
+        "3" onclick="writeThis(this.value)"/></td>
+        <td><input type="button" class="button symbols" value=
+        "x" onclick="writeThis('*')"/></td>
+      </tr>
+      <tr>
+        <td colspan="3"><input type="button" class="button0 numbers" value=
+        "0" onclick="writeThis(this.value)"/></td>
+        <td><input type="button" class="button symbols" value=
+        "=" onclick="ok()"/></td>
+      </tr>
+     </table>
+   </div>
+
+  </body>
+<script type="text/javascript" src="calculator.js"></script>
+</html>
