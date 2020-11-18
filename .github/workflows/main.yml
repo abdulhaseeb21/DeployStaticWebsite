@@ -18,14 +18,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
      - uses: actions/checkout@v2
-
-    - name: Install NodeJS
-      uses: actions/setup-node@v2-beta
-      with:
+     - name: Install NodeJS
+       uses: actions/setup-node@v2-beta
+       with:
           node-version: 12
 
-    - name: Install Surge
-      run: npm install -g surge
-    - name: Run Surge
-      run: surge ./ http://basic-calculator-haseeb.surge.sh --token ${{secrets.SURGE_TOKEN}}
+     - name: Install Surge
+       run: npm install -g surge
+     - name: Run Surge
+       run: surge ./ http://basic-calculator-haseeb.surge.sh --token ${{secrets.SURGE_TOKEN}}
 
